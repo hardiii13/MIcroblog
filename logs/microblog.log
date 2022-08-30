@@ -1,0 +1,87 @@
+2022-08-29 14:42:44,420 ERROR: Exception on /index [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2022-08-29 14:43:41,356 ERROR: Exception on / [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
+2022-08-29 15:00:39,056 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:74]
+2022-08-29 15:04:48,123 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:74]
+2022-08-29 15:26:50,830 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:78]
+2022-08-29 15:27:21,633 ERROR: Exception on /search [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\hardi\microblog\venv\app\main\routes.py", line 152, in search
+    posts, total = Post.search(g.search_form.q.data, page,
+  File "C:\Users\hardi\microblog\venv\app\models.py", line 15, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+  File "C:\Users\hardi\microblog\venv\app\search.py", line 22, in query_index
+    search = current_app.elasticsearch.search(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\elasticsearch\_sync\client\utils.py", line 414, in wrapped
+    return api(*args, **kwargs)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\elasticsearch\_sync\client\__init__.py", line 3774, in search
+    return self.perform_request(  # type: ignore[return-value]
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\elasticsearch\_sync\client\_base.py", line 286, in perform_request
+    meta, resp_body = self.transport.perform_request(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.ConnectionError: Connection error caused by: ConnectionError(Connection error caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x00000184FC5FC4C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it))
+2022-08-29 15:29:07,848 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:78]

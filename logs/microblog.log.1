@@ -1,0 +1,127 @@
+2022-08-26 21:53:57,967 ERROR: Exception on /index [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\hardi\microblog\venv\app\routes.py", line 37, in index
+    return render_template('index.html', title='Home', form=form,
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\hardi\microblog\venv\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\hardi\microblog\venv\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\hardi\microblog\venv\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "C:\Users\hardi\microblog\venv\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "C:\Users\hardi\microblog\venv\app\templates\_post.html", line 12, in top-level template code
+    said {{moment(posttimestamp).fromNow()}}:
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 229, in fromNow
+    return self._render("fromNow", no_suffix=int(no_suffix),
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 186, in _render
+    t = self._timestamp_as_iso_8601(self.timestamp)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 182, in _timestamp_as_iso_8601
+    return timestamp.strftime('%Y-%m-%dT%H:%M:%S' + tz)
+jinja2.exceptions.UndefinedError: 'posttimestamp' is undefined
+2022-08-26 21:54:14,358 ERROR: Exception on /index [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\hardi\microblog\venv\app\routes.py", line 37, in index
+    return render_template('index.html', title='Home', form=form,
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\hardi\microblog\venv\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\hardi\microblog\venv\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\hardi\microblog\venv\app\templates\base.html", line 48, in block 'content'
+    {% block app_content %}{% endblock %}
+  File "C:\Users\hardi\microblog\venv\app\templates\index.html", line 11, in block 'app_content'
+    {% include '_post.html' %}
+  File "C:\Users\hardi\microblog\venv\app\templates\_post.html", line 12, in top-level template code
+    said {{moment(posttimestamp).fromNow()}}:
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 229, in fromNow
+    return self._render("fromNow", no_suffix=int(no_suffix),
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 186, in _render
+    t = self._timestamp_as_iso_8601(self.timestamp)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_moment\__init__.py", line 182, in _timestamp_as_iso_8601
+    return timestamp.strftime('%Y-%m-%dT%H:%M:%S' + tz)
+jinja2.exceptions.UndefinedError: 'posttimestamp' is undefined
+2022-08-26 22:14:05,650 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:52]
+2022-08-26 22:35:16,290 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:52]
+2022-08-26 22:35:26,364 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:52]
+2022-08-26 23:41:37,127 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:52]
+2022-08-29 11:48:27,835 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:52]
+2022-08-29 14:42:35,235 INFO: Microblog startup [in C:\Users\hardi\microblog\venv\app\__init__.py:74]
+2022-08-29 14:42:42,165 ERROR: Exception on /index [GET] [in C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 285, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\login_manager.py", line 196, in unauthorized
+    redirect_url = make_login_url(login_view, next_url=request.url)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 120, in login_url
+    base = expand_login_view(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask_login\utils.py", line 97, in expand_login_view
+    return url_for(login_view)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\helpers.py", line 256, in url_for
+    return current_app.url_for(
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\hardi\microblog\venv\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'auth.login'. Did you mean 'main.user' instead?
